@@ -1,5 +1,5 @@
 export interface Event {
-  id: number
+  id: number | null
   category: string
   title: string
   description: string
@@ -9,11 +9,8 @@ export interface Event {
   petsAllowed: boolean
   organizer: string
 }
-
-export interface MessageState {
-  message: string
-}
-
-export interface EventState {
-  event: Event | null
+export interface Organizer {
+  id: number | null
+  organizationName: string
+  address: string
 }
